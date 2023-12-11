@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <!-- Include any other stylesheets or scripts your project requires -->
+    <title>Your Page Title</title>
+</head>
+
+<body>
+
+<header>
+    <!-- Include your header content here -->
+</header>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Content</th>
+        <th scope="col">File Size</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#articleList}}
+    <tr>
+        <th>{{id}}</th>
+        <td><a href="/article/{{id}}">{{title}}</a></td>
+        <td>{{content}}</td>
+        <td>{{filesize}} byte</td>
+    </tr>
+    {{/articleList}}
+    </tbody>
+</table>
+
+<a href="/article/CacBoard">게시글 작성하기</a>
+
+<footer>
+    <!-- Include your footer content here -->
+</footer>
+
+<!-- Include Bootstrap and any other scripts your project requires -->
+<script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+<!-- Include any other scripts your project requires -->
+
+</body>
+
+</html>

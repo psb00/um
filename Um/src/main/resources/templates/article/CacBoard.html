@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <!-- Include any other stylesheets or scripts your project requires -->
+    <title>Your Page Title</title>
+</head>
+
+<body>
+
+<header>
+    <!-- Include your header content here -->
+</header>
+
+<form class="container" action="/article/created" method="post" enctype="multipart/form-data">
+    <input name="id" type="hidden">
+    <div class="mb-3">
+        <label class="form-label">제목</label>
+        <input type="text" class="form-control" name="title">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">내용</label>
+        <textarea class="form-control" rows="3" name="content"></textarea>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">파일 첨부</label>
+        <input type="file" name="fileData">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-sm btn-primary" id="btnSave">저장</button>
+        <button onclick="location.href='/'" type="button" class="btn btn-sm btn-primary" id="btnList">목록</button>
+    </div>
+</form>
+
+<a href="/article">메인페이지로</a>
+
+<footer>
+    <!-- Include your footer content here -->
+</footer>
+
+<!-- Include Bootstrap and any other scripts your project requires -->
+<script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+<!-- Include any other scripts your project requires -->
+
+</body>
+
+</html>
